@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Menu in HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="menutoggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dropdown <b>⌄</b></a>
+                <ul>
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3 <b>+</b></a>
+                    <ul>
+                        <li><a href="#"></a>HTML</li>
+                        <li><a href="#"></a>CSS</li>
+                        <li><a href="#"></a>Java</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Portfolio <b>⌄</b></a>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let menutoggle = document.querySelector('.menutoggle');
+        let header = document.querySelector('header');
+        menutoggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
